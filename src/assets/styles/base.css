@@ -38,12 +38,3 @@ button:focus-visible,
   }
   .reveal { opacity: 1; transform: none; }
 }
-h1, h2, h3, p {
-  text-align: center;
-}
-@media (max-width: 480px) {
-  p {
-    margin-right: 25px;
-    margin-left: 25px;
-  }
-}

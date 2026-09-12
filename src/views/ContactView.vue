@@ -36,8 +36,6 @@ const { t } = useI18n()
 
             <!-- email -->
             <div class="lp-contact-feature reveal" data-d="1">
-              <div class="lp-contact-feature__glow lp-contact-feature__glow--gold" />
-              <div class="lp-contact-feature__glow lp-contact-feature__glow--azure" />
               <div style="position:relative">
                 <span class="lp-contact-feature__ic">
                   <LIcon name="mail" :size="22" :stroke="1.75"/>

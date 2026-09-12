@@ -23,18 +23,6 @@
 .lp-section--dark .lp-h2 { color: var(--fg-on-dark); }
 .lp-section--dark .lp-lede,
 .lp-section--dark .lp-body { color: var(--fg2-on-dark); }
-.lp-section--dark::before {
-  content: ""; position: absolute; width: 900px; height: 900px;
-  left: -200px; top: -300px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(111,147,181,.28), transparent 60%);
-  pointer-events: none;
-}
-.lp-section--dark::after {
-  content: ""; position: absolute; width: 700px; height: 700px;
-  right: -180px; bottom: -250px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(222,195,140,.18), transparent 62%);
-  pointer-events: none;
-}
 @media (max-width: 720px) { .lp-section { padding: 80px 0; } }
 @media (max-width: 480px) {
   .lp-section { padding: 64px 0; }

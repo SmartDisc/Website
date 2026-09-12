@@ -51,21 +51,15 @@
   --info:         var(--azure);
 
   /* ============================================================
-     LIQUID GLASS surface system
+     Glass — reserved for the nav and a couple of signature surfaces,
+     not applied as a blanket surface treatment (see components.css)
      ============================================================ */
   --glass-blur:        saturate(180%) blur(20px);
-  --glass-blur-strong: saturate(200%) blur(34px);
-  --glass-blur-thin:   saturate(160%) blur(10px);
 
   --glass-light-bg:    rgba(255, 255, 255, 0.55);
   --glass-light-border:rgba(255, 255, 255, 0.70);
   --glass-light-hi:    rgba(255, 255, 255, 0.90);
 
-  --glass-paper-bg:    rgba(242, 234, 226, 0.62);
-  --glass-paper-border:rgba(255, 251, 244, 0.65);
-
-  --glass-dark-bg:     rgba(16, 42, 87, 0.55);
-  --glass-dark-border: rgba(146, 178, 220, 0.35);
   --glass-dark-hi:     rgba(180, 205, 240, 0.45);
 
   --glass-gold-bg:     rgba(222, 195, 140, 0.30);
@@ -163,25 +157,4 @@
   font-family: 'Space Grotesk', ui-monospace, monospace;
   font-feature-settings: 'tnum' 1;
   letter-spacing: 0.01em;
-}
-
-/* ============================================================
-   Glass utility classes
-   ============================================================ */
-.glass {
-  background: var(--glass-light-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-light-border);
-  border-radius: var(--r-lg);
-  box-shadow: var(--shadow-glass);
-}
-.glass-dark {
-  background: var(--glass-dark-bg);
-  -webkit-backdrop-filter: var(--glass-blur);
-  backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-dark-border);
-  border-radius: var(--r-lg);
-  box-shadow: var(--shadow-glass-dark);
-  color: var(--fg-on-dark);
 }

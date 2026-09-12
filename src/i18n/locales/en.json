@@ -24,7 +24,7 @@
     "about": "SmartDisc turns every throw into data. Built for Ultimate Frisbee. Powered by innovation.",
     "shop": {
       "title": "Shop",
-      "all": "All products",
+      "all": "Our products",
       "disc": "SmartDisc Ultimate",
       "app": "Application"
     },
@@ -50,33 +50,33 @@
   "home": {
     "hero": {
       "title": "SmartDisc",
-      "lede": "SmartDisc is the first Ultimate Frisbee disc with sensors built inside — distance, speed, and spin captured on every throw, automatically. Open the companion app when you're done and everything is already there.",
-      "cta": "Reserve yours — from €129"
+      "lede": "SmartDisc is the first Ultimate Frisbee disc with sensors built inside, capturing distance, speed, and spin on every throw, automatically. Open the companion app when you're done and everything is already there.",
+      "cta": "Reserve yours, from €129"
     },
     "ecosystem": {
       "title": "Inside the disc, everything you threw.",
-      "lede": "Every sensor is sealed inside the disc itself — nothing on your wrist, nothing to clip on. When you're ready to review, the companion app connects and every throw is waiting.",
+      "lede": "Every sensor is sealed inside the disc itself: nothing on your wrist, nothing to clip on. When you're ready to review, the companion app connects and every throw is waiting for you.",
       "imgAlt": "Player holding a SmartDisc, ready to throw"
     },
     "problem": {
       "title": "Ultimate is one of the few competitive sports without data-driven training.",
-      "lede": "Players train, compete, and improve based largely on observation. Critical performance metrics remain invisible, limiting objective analysis and development.",
+      "lede": "Players train, compete, and improve based largely on observation. The metrics that actually matter stay invisible, which makes real analysis and development hard.",
       "items": [
         {
           "h": "You throw, you guess.",
-          "p": "Was your throw faster, more accurate, or more consistent than last week? Without data, improvement is based on feeling rather than facts."
+          "p": "Was your throw faster, more accurate, or more consistent than last week? Without data, you're just guessing."
         },
         {
           "h": "Progress is hard to measure.",
-          "p": "Players spend countless hours training, but objective performance metrics are missing. Development remains difficult to track and compare over time."
+          "p": "Players put in countless hours of training, but the numbers that would show whether it's working are missing. Progress is hard to track or compare over time."
         },
         {
           "h": "Coaching relies on observation.",
-          "p": "Coaches can identify strengths and weaknesses, but without measurable data, feedback remains subjective and difficult to quantify."
+          "p": "Coaches can spot strengths and weaknesses, but without measurable data, their feedback stays subjective and hard to back up."
         },
         {
           "h": "Ultimate lacks performance technology.",
-          "p": "Many sports benefit from advanced analytics, sensors, and tracking systems. Ultimate Frisbee still lacks dedicated tools for real-time performance analysis."
+          "p": "Plenty of sports already use advanced analytics, sensors, and tracking systems. Ultimate Frisbee still doesn't have tools built for real-time performance analysis."
         }
       ]
     },
@@ -86,15 +86,15 @@
       "steps": [
         {
           "h": "Play and train as usual.",
-          "p": "SmartDisc pairs with the mobile application and prepares for data collection. Setup is quick throught a  and allows players to start tracking performance immediately."
+          "p": "SmartDisc pairs with the mobile app and gets ready to record. Setup takes just a couple of minutes, and then you're tracking performance right away."
         },
         {
           "h": "The disc captures everything. You just throw.",
-          "p": "Integrated sensors inside the disc capture key performance metrics such as speed, spin, distance, and flight characteristics in real time without affecting the natural feel of the disc. With that it can be used during tournaments."
+          "p": "Sensors built into the disc track speed, spin, distance, and flight characteristics in real time, without changing how the disc feels. That means you can use it in tournaments too."
         },
         {
           "h": "Turn data into performance.",
-          "p": "The app visualizes every throw and provides actionable insights for players and coaches. Progress can be tracked over time, making training more objective, measurable, and effective."
+          "p": "The app visualizes every throw and shows players and coaches what actually happened. You can track progress over time instead of just guessing at it."
         }
       ]
     },
@@ -104,15 +104,15 @@
       "items": [
         {
           "u": "%",
-          "k": "Faster performance evaluation - Players receive immediate feedback after every throw."
+          "k": "Players get feedback the moment they finish a throw."
         },
         {
           "u": "s",
-          "k": "Automatic data collection - No manual tracking required during training."
+          "k": "No manual tracking. The disc logs it automatically during training."
         },
         {
           "u": "Core Metrics",
-          "k": "Speed, spin, distance, and flight path - Essential performance data captured in real time."
+          "k": "Speed, spin, distance, and flight path, captured in real time."
         },
         {
           "u": "Ecosystem",
@@ -125,7 +125,7 @@
     "hero": {
       "title": "The SmartDisc {highlight}",
       "titleHighlight": "lineup.",
-      "lede": "Built to competition standards at 175 g, SmartDisc preserves the authentic Ultimate Frisbee experience while unlocking real-time performance analytics through integrated sensor technology and a companion app."
+      "lede": "Built to competition standards at 175 g, SmartDisc plays like a real Ultimate Frisbee disc. The sensors inside and the companion app give you real-time performance analytics on top of that."
     },
     "banner": {
       "bold": "Early-access pre-order.",
@@ -161,7 +161,7 @@
     },
     "appCallout": {
       "heading": "One app. One bag. One season.",
-      "body": "The SmartDisc app is the only way to read what your disc captured. It is available on the App Store and Google Play.",
+      "body": "The SmartDisc app is the only way to see what your disc captured, and it's available on the App Store and Google Play.",
       "imgAlt": "SmartDisc app landing screen"
     }
   },
@@ -172,18 +172,18 @@
       "lede": "Two ways to reach us. We answer every message, usually within one business day."
     },
     "email": {
-      "body": "Pre-order questions, team bundles, press, partnerships — one inbox, one team, fast replies.",
+      "body": "Pre-order questions, team bundles, press, partnerships: one inbox, one team, fast replies.",
       "promise": "Replies within one business day"
     },
     "phone": {
-      "body": "Prefer to talk? Give us a call during business hours. Monday to Friday, 9 am – 5 pm CET."
+      "body": "Prefer to talk? Give us a call during business hours: Monday to Friday, 9 am to 5 pm CET."
     }
   },
   "faq": {
     "hero": {
       "title": "Questions {highlight}",
       "titleHighlight": "worth answering.",
-      "lede": "The honest version — written by humans who can't stand evasive FAQ pages either. Can't find what you need? Drop us a note from the Contact page."
+      "lede": "The honest version, written by humans who can't stand evasive FAQ pages either. Can't find what you need? Drop us a note from the Contact page."
     },
     "filterAll": "All",
     "categories": {
@@ -192,7 +192,7 @@
         "items": [
           {
             "q": "When does SmartDisc ship?",
-            "a": "All current orders are pre-orders. Manufacturing starts in winter 2026 aproximatly; the first discs leave Vienna in early summer 2027 and ship in the order placed. We'll send you a tracking-window email two weeks before your disc heads out."
+            "a": "All current orders are pre-orders. Manufacturing starts in winter 2026, approximately; the first discs leave Vienna in early summer 2027 and ship in the order placed. We'll send you a tracking-window email two weeks before your disc heads out."
           },
           {
             "q": "Is the price now the final price?",
@@ -204,7 +204,7 @@
           },
           {
             "q": "Can I change my address before it ships?",
-            "a": "Yes — sign in with the email you used to reserve, then update the address from Pre-order > Shipping. We freeze the address two business days before dispatch."
+            "a": "Yes. Sign in with the email you used to reserve, then update the address from Pre-order > Shipping. We freeze the address two business days before dispatch."
           },
           {
             "q": "Do you ship outside the EU and US?",
@@ -217,7 +217,7 @@
         "items": [
           {
             "q": "Does the disc feel different than a regular 175?",
-            "a": "It weighs the same 175 grams, with identical flight characteristics — we worked with the equipment committee on tolerances. The sensors and battery are distributed so the center of mass is exactly where the disc council expects it."
+            "a": "It weighs the same 175 grams, with identical flight characteristics. We worked with the equipment committee on tolerances, and the sensors and battery are distributed so the center of mass is exactly where the disc council expects it."
           },
           {
             "q": "How long does the battery last?",
@@ -229,11 +229,11 @@
           },
           {
             "q": "Is SmartDisc tournament-legal?",
-            "a": "For most sanctioned events, yes — the disc meets WFDF 175 g standards. We recommend keeping it in scrimmage and practice for now and checking with your local federation before a championship final."
+            "a": "For most sanctioned events, yes: the disc meets WFDF 175 g standards. We recommend keeping it in scrimmage and practice for now and checking with your local federation before a championship final."
           },
           {
             "q": "Is it weatherproof?",
-            "a": "Yes — rated for rain, mud and the occasional cleat. We do not recommend submerging it; the inductive coil prefers a dry rim."
+            "a": "Yes, rated for rain, mud and the occasional cleat. We do not recommend submerging it; the inductive coil prefers a dry rim."
           }
         ]
       },
@@ -254,7 +254,7 @@
           },
           {
             "q": "Can I export my throws?",
-            "a": "Yes — Settings > Export sends every throw as CSV to any email or cloud drive. Your data is yours; we never sell or share it."
+            "a": "Yes. Settings > Export sends every throw as CSV to any email or cloud drive. Your data is yours; we never sell or share it."
           },
           {
             "q": "Can teammates see my throws?",
@@ -267,7 +267,7 @@
         "items": [
           {
             "q": "How much does shipping cost?",
-            "a": "Free for EU and US pre-orders. Other regions: shipping is calculated at checkout based on weight and destination — usually €12–25 for international."
+            "a": "Free for EU and US pre-orders. Other regions: shipping is calculated at checkout based on weight and destination, usually €12 to €25 for international."
           },
           {
             "q": "What's the return policy?",
@@ -275,11 +275,11 @@
           },
           {
             "q": "What if my disc arrives damaged?",
-            "a": "Contact us! -> smartdisc{'@'}mailo.com"
+            "a": "Contact us at smartdisc{'@'}mailo.com and we'll sort it out."
           },
           {
             "q": "Is there a warranty?",
-            "a": "Two-year limited warranty against sensor and battery failure. Wear and tear from normal play is on the disc — these are tools, not collectibles."
+            "a": "Two-year limited warranty against sensor and battery failure. Wear and tear from normal play isn't covered: these are tools, not collectibles."
           }
         ]
       },
@@ -292,7 +292,7 @@
           },
           {
             "q": "What happens to my data if I cancel a pre-order?",
-            "a": "Nothing — pre-orders don't create an app account. The disc's throws only exist after pairing."
+            "a": "Nothing. Pre-orders don't create an app account. A disc's throws only exist once you pair it."
           }
         ]
       }
@@ -310,10 +310,10 @@
       "lede": "SmartDisc started as a diploma project driven by a simple idea: bring data-driven training to Ultimate Frisbee. Combining engineering, software development, and a passion for the sport, we turned that idea into a real product."
     },
     "story": {
-      "title1": "It started with a simple question - How can you improve a throw if you can't measure it?",
+      "title1": "It started with a simple question: how can you improve a throw if you can't measure it?",
       "body1": "As Ultimate Frisbee players and technology enthusiasts, we noticed that while many sports rely on data and analytics, Ultimate still depends largely on observation and experience. We wanted to change that. What started as a diploma project quickly became an ambitious challenge: developing a smart disc capable of collecting real-time performance data without changing the feel or flight characteristics of a regulation 175 g Ultimate Frisbee. By combining mechatronics, software development, data analytics, and design, we transformed an idea into a working prototype: SmartDisc.",
       "title2": "Technology should support the game, not change it.",
-      "body2": "We didn't want players to adapt to technology. We wanted technology to adapt to players. SmartDisc is designed to feel, fly, and perform like a regulation 175 g Ultimate Frisbee. The sensors work silently in the background, capturing valuable performance data without affecting the game itself. Technology shouldn't interrupt the game—it should help players get better."
+      "body2": "We didn't want players to adapt to technology. We wanted technology to adapt to players. SmartDisc is designed to feel, fly, and perform like a regulation 175 g Ultimate Frisbee. The sensors work silently in the background, capturing performance data without affecting the game itself. Technology shouldn't interrupt the game. It should help players get better."
     },
     "timeline": {
       "title": "From idea to SmartDisc.",
@@ -348,7 +348,7 @@
         "Co-founder",
         "App & Website",
         "Firmware & Hardware",
-        "Kamera Tracking",
+        "Camera Tracking",
         "Hardware & PCB"
       ]
     }
@@ -359,7 +359,7 @@
     "meta": "Last updated: 1 June 2026",
     "s1": {
       "title": "1. Who we are",
-      "body": "SmartDisc, Baumhaselweg 2, 1120 Vienna, Austria (\"SmartDisc\", \"we\", \"us\") operates the website at smartdisc{'@'}mailo.com and the SmartDisc mobile app for iOS and Android. We are the controller of your personal data as defined under the EU General Data Protection Regulation (GDPR).",
+      "body": "SmartDisc, Baumhaselweg 2, 1120 Vienna, Austria (\"SmartDisc\", \"we\", \"us\") operates the website at smartdisc.at and the SmartDisc mobile app for iOS and Android. We are the controller of your personal data as defined under the EU General Data Protection Regulation (GDPR).",
       "contact": "Questions about this policy: {email}"
     },
     "s2": {
@@ -447,17 +447,15 @@
     "s2": {
       "title": "2. Pre-orders",
       "pricingTitle": "Pricing",
-      "pricingBody": "Prices are shown in EUR and include VAT where required by Austrian and EU law.",
+      "pricingBody": "Prices shown on the Products page are locked in for pre-order customers — we won't raise the price between your reservation date and the day it's charged. All prices are in EUR and include VAT where applicable. Currency conversion for non-EUR payments happens at checkout and may vary slightly by the time your card is charged.",
       "cancellationTitle": "Cancellation",
       "cancellationBody": "You may cancel your pre-order at any time before we notify you that your disc has been dispatched. To cancel, email {email} with your order reference. No charge will be made if you cancel before dispatch.",
-      "pricing2Title": "Pricing",
-      "pricing2Body": "Prices shown on the Products page are locked for pre-order customers. We will not raise the price between your reservation date and the charge date. All prices are shown in EUR and are inclusive of VAT where applicable. Currency conversion for non-EUR payments is handled at checkout and may vary slightly at the time of charge.",
       "deliveryTitle": "Delivery",
       "deliveryBody": "Estimated delivery windows are provided in good faith but are not guaranteed. SmartDisc is not liable for delays caused by manufacturing, customs, or logistics partners. You will receive a tracking-window email at least two weeks before your disc is dispatched."
     },
     "s3": {
       "title": "3. The app",
-      "body1": "The SmartDisc app is licensed, not sold. We grant you a personal, non-transferable, non-exclusive licence to use the app on devices you own, subject to these Terms and the applicable App Store or Google Play terms. The licence is valid for the lifetime of the paired disc and does not require any recurring payment. You may not reverse-engineer, decompile, or distribute the app. You may not attempt to intercept, replay, or spoof the Bluetooth signals emitted by a SmartDisc device.",
+      "body1": "The SmartDisc app is licensed, not sold. We grant you a personal, non-transferable, non-exclusive licence to use the app on devices you own, subject to these Terms and the applicable App Store or Google Play terms. The licence is valid for the lifetime of the paired disc and does not require any recurring payment.",
       "body2": "You may not reverse-engineer, decompile, or distribute the app. You may not attempt to intercept, replay, or spoof the Bluetooth signals emitted by a SmartDisc device."
     },
     "s4": {
@@ -511,9 +509,9 @@
     "contactTitle": "Contact",
     "contactEmail": "Email: {email}",
     "representativesTitle": "Legal representatives",
-    "representativesBody": "Managing Directors: Managing Directors: Petra Palinkas, Elias Vavra",
+    "representativesBody": "Managing Directors: Petra Palinkas, Elias Vavra",
     "editorialTitle": "Responsible for editorial content",
-    "editorialNames": "Petra Palinkas, Erik Weidernauer, Elias Vavra",
+    "editorialNames": "Petra Palinkas, Erik Weidenauer, Elias Vavra",
     "editorialAddress": "SmartDisc · Vienna, Austria",
     "disputeTitle": "Dispute resolution",
     "disputeBody": "The European Commission provides an Online Dispute Resolution (ODR) platform: {link}. Our email address for this purpose: {email}",

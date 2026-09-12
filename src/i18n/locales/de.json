@@ -24,7 +24,7 @@
     "about": "SmartDisc macht aus jedem Wurf Daten. Entwickelt für Ultimate Frisbee. Angetrieben von Innovation.",
     "shop": {
       "title": "Shop",
-      "all": "Alle Produkte",
+      "all": "Unsere Produkte",
       "disc": "SmartDisc Ultimate",
       "app": "App"
     },
@@ -359,7 +359,7 @@
     "meta": "Zuletzt aktualisiert: 1. Juni 2026",
     "s1": {
       "title": "1. Wer wir sind",
-      "body": "SmartDisc, Baumhaselweg 2, 1120 Wien, Österreich („SmartDisc“, „wir“, „uns“) betreibt die Website unter smartdisc{'@'}mailo.com sowie die SmartDisc-App für iOS und Android. Wir sind Verantwortlicher für Ihre personenbezogenen Daten im Sinne der EU-Datenschutz-Grundverordnung (DSGVO).",
+      "body": "SmartDisc, Baumhaselweg 2, 1120 Wien, Österreich („SmartDisc“, „wir“, „uns“) betreibt die Website unter smartdisc.at sowie die SmartDisc-App für iOS und Android. Wir sind Verantwortlicher für Ihre personenbezogenen Daten im Sinne der EU-Datenschutz-Grundverordnung (DSGVO).",
       "contact": "Fragen zu dieser Erklärung: {email}"
     },
     "s2": {
@@ -447,17 +447,15 @@
     "s2": {
       "title": "2. Vorbestellungen",
       "pricingTitle": "Preise",
-      "pricingBody": "Preise werden in EUR angegeben und enthalten die Umsatzsteuer, soweit nach österreichischem und EU-Recht erforderlich.",
+      "pricingBody": "Die auf der Produktseite angezeigten Preise sind für Vorbesteller fixiert — wir erhöhen sie nicht zwischen Ihrem Reservierungsdatum und dem Abbuchungsdatum. Alle Preise werden in EUR angegeben und verstehen sich inklusive Umsatzsteuer, soweit anwendbar. Die Währungsumrechnung für Zahlungen in anderen Währungen erfolgt beim Checkout und kann zum Zeitpunkt der Abbuchung geringfügig abweichen.",
       "cancellationTitle": "Stornierung",
       "cancellationBody": "Sie können Ihre Vorbestellung jederzeit stornieren, bevor wir Ihnen den Versand Ihrer Scheibe mitteilen. Senden Sie zur Stornierung eine E-Mail mit Ihrer Bestellreferenz an {email}. Bei einer Stornierung vor dem Versand wird keine Zahlung erhoben.",
-      "pricing2Title": "Preise",
-      "pricing2Body": "Die auf der Produktseite angezeigten Preise sind für Vorbesteller fixiert. Wir erhöhen den Preis zwischen Ihrem Reservierungsdatum und dem Abbuchungsdatum nicht. Alle Preise werden in EUR angegeben und verstehen sich inklusive Umsatzsteuer, soweit anwendbar. Die Währungsumrechnung für Zahlungen in anderen Währungen erfolgt beim Checkout und kann zum Zeitpunkt der Abbuchung geringfügig abweichen.",
       "deliveryTitle": "Lieferung",
       "deliveryBody": "Voraussichtliche Lieferzeiträume werden nach bestem Wissen angegeben, sind jedoch nicht garantiert. SmartDisc haftet nicht für Verzögerungen durch Fertigung, Zoll oder Logistikpartner. Sie erhalten mindestens zwei Wochen vor dem Versand Ihrer Scheibe eine E-Mail mit dem Versandfenster."
     },
     "s3": {
       "title": "3. Die App",
-      "body1": "Die SmartDisc-App wird lizenziert, nicht verkauft. Wir gewähren Ihnen eine persönliche, nicht übertragbare, nicht ausschließliche Lizenz zur Nutzung der App auf Geräten in Ihrem Eigentum, vorbehaltlich dieser AGB und der geltenden Bedingungen des App Store bzw. von Google Play. Die Lizenz gilt für die Lebensdauer der gekoppelten Scheibe und erfordert keine wiederkehrenden Zahlungen. Sie dürfen die App nicht zurückentwickeln, dekompilieren oder verbreiten. Sie dürfen nicht versuchen, die von einem SmartDisc-Gerät ausgesendeten Bluetooth-Signale abzufangen, wiederzugeben oder zu fälschen.",
+      "body1": "Die SmartDisc-App wird lizenziert, nicht verkauft. Wir gewähren Ihnen eine persönliche, nicht übertragbare, nicht ausschließliche Lizenz zur Nutzung der App auf Geräten in Ihrem Eigentum, vorbehaltlich dieser AGB und der geltenden Bedingungen des App Store bzw. von Google Play. Die Lizenz gilt für die Lebensdauer der gekoppelten Scheibe und erfordert keine wiederkehrenden Zahlungen.",
       "body2": "Sie dürfen die App nicht zurückentwickeln, dekompilieren oder verbreiten. Sie dürfen nicht versuchen, die von einem SmartDisc-Gerät ausgesendeten Bluetooth-Signale abzufangen, wiederzugeben oder zu fälschen."
     },
     "s4": {
@@ -513,7 +511,7 @@
     "representativesTitle": "Vertretungsberechtigte",
     "representativesBody": "Geschäftsführung: Petra Palinkas, Elias Vavra",
     "editorialTitle": "Verantwortlich für den redaktionellen Inhalt",
-    "editorialNames": "Petra Palinkas, Erik Weidernauer, Elias Vavra",
+    "editorialNames": "Petra Palinkas, Erik Weidenauer, Elias Vavra",
     "editorialAddress": "SmartDisc · Wien, Österreich",
     "disputeTitle": "Streitbeilegung",
     "disputeBody": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: {link}. Unsere E-Mail-Adresse für diesen Zweck: {email}",

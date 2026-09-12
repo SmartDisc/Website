@@ -39,10 +39,6 @@ const {t} = useI18n()
                 <a href="mailto:smartdisc@mailo.com">smartdisc@mailo.com</a>
               </template>
             </i18n-t>
-            <h3>{{ t('terms.s2.pricing2Title') }}</h3>
-            <p>
-              {{ t('terms.s2.pricing2Body') }}
-            </p>
             <h3>{{ t('terms.s2.deliveryTitle') }}</h3>
             <p>
               {{ t('terms.s2.deliveryBody') }}

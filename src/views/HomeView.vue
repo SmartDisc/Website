@@ -11,8 +11,7 @@ useScrollReveal()
 
 const { t } = useI18n()
 
-const pains = computed(() => ['01', '02', '03', '04'].map((no, i) => ({
-  no,
+const pains = computed(() => [0, 1, 2, 3].map((i) => ({
   h: t(`home.problem.items.${i}.h`),
   p: t(`home.problem.items.${i}.p`),
 })))
@@ -30,21 +29,7 @@ const metrics = computed(() => metricValues.map((m, i) => ({
   k: t(`home.metrics.items.${i}.k`),
 })))
 
-// Used by the commented-out social-proof section below.
-const testimonials = [
-  { featured: true, q: 'The first time I saw my flick land at 32 m and not 25 like I\'d been telling myself, I knew this thing was going to change how I train.', n: 'Mira Solberg', r: 'Captain · Oslo Skywalkers', c: '#1d3d72', stars: 5 },
-  { q: 'We finally have a way to settle the longest-huck argument with data instead of beer.', n: 'Diego Marín', r: 'Coach · Bogotá Cóndores', c: '#b8924f', stars: 5 },
-  { q: 'It feels like a normal 175 in your hand. You forget about the sensors until you open the app.', n: 'Hana Watanabe', r: 'Mixed division · Tokyo Layout', c: '#6f93b5', stars: 5 },
-]
 
-const logos = [
-  { name: 'OSLO SKYWALKERS', serif: false },
-  { name: 'Bogotá Cóndores', serif: true },
-  { name: 'TOKYO LAYOUT', serif: false },
-  { name: 'Berlin Reset', serif: true },
-  { name: 'AUSTIN HEAT', serif: false },
-  { name: 'Dublin Drift', serif: true },
-]
 </script>
 
 <template>
@@ -103,9 +88,8 @@ const logos = [
               </p>
             </div>
             <div class="lp-problem-list">
-              <div v-for="(p,i) in pains" :key="p.no"
+              <div v-for="(p,i) in pains" :key="p.h"
                    class="lp-problem-card reveal" :data-d="String((i%3)+1)">
-                <span class="lp-problem-card__no">{{p.no}}</span>
                 <h3>{{p.h}}</h3>
                 <p>{{p.p}}</p>
               </div>
@@ -157,43 +141,6 @@ const logos = [
           </div>
         </div>
       </section>
-
-      <!-- ===== SOCIAL PROOF ===== -->
-      <!--
-      <section class="lp-section" id="social">
-        <div class="lp-container">
-          <div style="text-align:center;max-width:720px;margin:0 auto">
-            <Eyebrow>Players are saying</Eyebrow>
-            <h2 class="lp-h1 reveal" data-d="1" style="margin-top:16px">
-              Loved by teams that train like it matters.
-            </h2>
-          </div>
-          <div class="lp-testimonials">
-            <div v-for="(t,i) in testimonials" :key="i"
-                 :class="['lp-testimonial reveal', t.featured && 'lp-testimonial--featured']" :data-d="String(i+1)">
-              <div class="lp-testimonial__stars">
-                <svg v-for="j in t.stars" :key="j" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color:var(--gold-500)" aria-hidden="true">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-              </div>
-              <p class="lp-testimonial__quote">{{t.q}}</p>
-              <div class="lp-testimonial__by">
-                <span class="lp-testimonial__avatar" :style="{ background: t.c }">{{t.n[0]}}</span>
-                <div>
-                  <div class="lp-testimonial__name">{{t.n}}</div>
-                  <div class="lp-testimonial__role">{{t.r}}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="lp-logos">
-            <span v-for="l in logos" :key="l.name" :class="['lp-logo', l.serif && 'lp-logo--serif']">
-              <span class="lp-logo__dot"/> {{l.name}}
-            </span>
-          </div>
-        </div>
-      </section>
-    -->
 
     </main>
     <SiteFooter />

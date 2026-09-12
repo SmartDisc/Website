@@ -137,7 +137,7 @@ const products = computed(() => [
                     <LIcon name="calendar-clock" :size="14" :stroke="2"/>
                     {{ p.status === 'preorder' ? t('products.avail.preorder') : p.status === 'soon' ? t('products.avail.soon') : t('products.avail.now') }}
                   </div>
-                </div>
+                </div>P
                 <div class="lp-product__cta">
                   <RouterLink class="lp-btn lp-btn--gold lp-btn--md" to="/contact">{{ t('products.cta') }}</RouterLink>
                 </div>
