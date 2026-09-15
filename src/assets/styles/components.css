@@ -858,7 +858,7 @@
     letter-spacing: -.01em;
 }
 
-.lp-faq__plus {
+.lp-faq__arrow {
     margin-left: auto;
     flex: none;
     width: 28px;
@@ -872,8 +872,8 @@
     transition: transform var(--dur-base) var(--ease-glass), background var(--dur-base);
 }
 
-.lp-faq__item.is-open .lp-faq__plus {
-    transform: rotate(45deg);
+.lp-faq__item.is-open .lp-faq__arrow {
+    transform: rotate(180deg);
     background: var(--gold-grad);
     color: #4a3712;
 }
@@ -912,6 +912,75 @@
         padding: 0 18px 20px;
         font-size: 15.5px;
     }
+}
+
+/* FAQ search */
+.lp-faq-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 12px 18px;
+    border-radius: var(--r-pill);
+    background: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(16, 42, 87, .1);
+    box-shadow: var(--shadow-sm);
+    transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.lp-faq-search:focus-within {
+    border-color: var(--gold-400);
+    box-shadow: var(--shadow-md);
+}
+
+.lp-faq-search__icon {
+    flex: none;
+    color: var(--fg2);
+}
+
+.lp-faq-search__input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--ink);
+}
+
+.lp-faq-search__input::placeholder {
+    color: var(--fg2);
+    opacity: .75;
+}
+
+.lp-faq-search__clear {
+    flex: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(16, 42, 87, .07);
+    border: none;
+    color: var(--fg2);
+    cursor: pointer;
+    transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+.lp-faq-search__clear:hover {
+    background: rgba(16, 42, 87, .14);
+    color: var(--ink);
+}
+
+.lp-faq-empty {
+    margin-top: 56px;
+    text-align: center;
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--fg2);
 }
 
 /* FAQ category filter */

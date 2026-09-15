@@ -186,6 +186,9 @@
       "lede": "The honest version, written by humans who can't stand evasive FAQ pages either. Can't find what you need? Drop us a note from the Contact page."
     },
     "filterAll": "All",
+    "searchPlaceholder": "Search FAQs...",
+    "searchClear": "Clear search",
+    "noResults": "No FAQs match your search. Try a different term, or ask us directly.",
     "categories": {
       "preorder": {
         "title": "Pre-order",

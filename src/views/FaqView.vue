@@ -31,10 +31,25 @@ const categories = computed(() => categoryDefs.map(c => ({
 
 const activeCategory = ref('All')
 const openKey = ref(null)
+const searchQuery = ref('')
 
-const visibleSections = computed(() =>
-    activeCategory.value === 'All' ? categories.value : categories.value.filter(s => s.key === activeCategory.value)
-)
+// Flattened so the "All" view is a single continuous list, with no
+// category-to-category gap and no per-category headings to keep in sync.
+const visibleItems = computed(() => {
+  const q = searchQuery.value.trim().toLowerCase()
+  const sections = activeCategory.value === 'All'
+      ? categories.value
+      : categories.value.filter(s => s.key === activeCategory.value)
+
+  const items = []
+  for (const section of sections) {
+    section.items.forEach((it, i) => {
+      if (q && !it.q.toLowerCase().includes(q) && !it.a.toLowerCase().includes(q)) return
+      items.push({ catKey: section.key, index: i, q: it.q, a: it.a })
+    })
+  }
+  return items
+})
 
 function toggle(cat, i) {
   const key = `${cat}:${i}`
@@ -67,6 +82,24 @@ function isOpen(cat, i) {
       <!-- faq body -->
       <section class="lp-section lp-section--tight">
         <div class="lp-container">
+          <!-- search -->
+          <div class="lp-faq-search">
+            <svg class="lp-faq-search__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+            <input v-model="searchQuery" type="text" class="lp-faq-search__input"
+                   :placeholder="t('faq.searchPlaceholder')" :aria-label="t('faq.searchPlaceholder')"/>
+            <button v-if="searchQuery" class="lp-faq-search__clear" type="button"
+                    :aria-label="t('faq.searchClear')" @click="searchQuery = ''">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                   stroke-linecap="round">
+                <path d="M6 6l12 12M18 6L6 18"/>
+              </svg>
+            </button>
+          </div>
+
           <!-- category filter -->
           <div class="lp-faq-cats">
             <button :class="['lp-faq-cat', activeCategory === 'All' && 'is-active']"
@@ -78,25 +111,24 @@ function isOpen(cat, i) {
             </button>
           </div>
 
-          <div v-for="section in visibleSections" :key="section.key" style="margin-top:48px">
-            <div class="lp-faq">
-              <div v-for="(it, i) in section.items" :key="`${section.key}:${i}`"
-                   :class="['lp-faq__item', isOpen(section.key, i) && 'is-open']">
-                <button class="lp-faq__q" @click="toggle(section.key, i)">
-                  {{ it.q }}
-                  <span class="lp-faq__plus">
+          <div class="lp-faq" v-if="visibleItems.length">
+            <div v-for="it in visibleItems" :key="`${it.catKey}:${it.index}`"
+                 :class="['lp-faq__item', isOpen(it.catKey, it.index) && 'is-open']">
+              <button class="lp-faq__q" @click="toggle(it.catKey, it.index)">
+                {{ it.q }}
+                <span class="lp-faq__arrow">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                         stroke-linecap="round">
-                      <path d="M12 5v14M5 12h14"/>
+                         stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M6 9l6 6 6-6"/>
                     </svg>
                   </span>
-                </button>
-                <div class="lp-faq__a">
-                  <div class="lp-faq__a-inner">{{ it.a }}</div>
-                </div>
+              </button>
+              <div class="lp-faq__a">
+                <div class="lp-faq__a-inner">{{ it.a }}</div>
               </div>
             </div>
           </div>
+          <p v-else class="lp-faq-empty">{{ t('faq.noResults') }}</p>
         </div>
       </section>
 

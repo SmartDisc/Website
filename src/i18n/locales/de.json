@@ -186,6 +186,9 @@
       "lede": "Die ehrliche Version — geschrieben von Leuten, die schwammige FAQ-Seiten selbst nicht ausstehen können. Nicht fündig geworden? Schreib uns einfach über die Kontaktseite."
     },
     "filterAll": "Alle",
+    "searchPlaceholder": "FAQs durchsuchen...",
+    "searchClear": "Suche zurücksetzen",
+    "noResults": "Keine FAQs gefunden. Versuch einen anderen Begriff oder schreib uns direkt.",
     "categories": {
       "preorder": {
         "title": "Vorbestellung",

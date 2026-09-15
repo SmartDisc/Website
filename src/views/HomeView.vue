@@ -110,7 +110,6 @@ const metrics = computed(() => metricValues.map((m, i) => ({
           </div>
           <div class="lp-solution-steps">
             <div v-for="i in 3" :key="i" class="lp-step reveal" :data-d="String(i)">
-              <span class="lp-step__no">{{ i }}</span>
               <h3>{{ t(`home.how.steps.${i - 1}.h`) }}</h3>
               <p>{{ t(`home.how.steps.${i - 1}.p`) }}</p>
             </div>
