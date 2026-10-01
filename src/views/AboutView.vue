@@ -2,11 +2,13 @@
 import {computed} from 'vue'
 import {useI18n} from 'vue-i18n'
 import {useScrollReveal} from '@/composables/useScrollReveal'
+import {useSeo} from '@/composables/useSeo'
 import Atmosphere from '@/components/features/Atmosphere.vue'
 import SiteNav from '@/components/layout/SiteNav.vue'
 import SiteFooter from '@/components/layout/SiteFooter.vue'
 
 useScrollReveal()
+useSeo('about.seo.title', 'about.seo.description')
 
 const {t} = useI18n()
 

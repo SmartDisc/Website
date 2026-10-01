@@ -119,6 +119,10 @@
           "k": "Scheibe, Sensoren und App"
         }
       ]
+    },
+    "seo": {
+      "title": "SmartDisc — Die smarte Ultimate-Scheibe mit Sensorik",
+      "description": "SmartDisc misst jeden Wurf automatisch: Distanz, Geschwindigkeit und Spin per eingebauter Sensorik. Mit App-Zugang. Jetzt ab 129 € vorbestellen ✓"
     }
   },
   "products": {
@@ -163,6 +167,10 @@
       "heading": "Eine App. Eine Tasche. Eine Saison.",
       "body": "Nur über die SmartDisc-App kommst du an die Daten, die deine Scheibe erfasst hat. Erhältlich im App Store und bei Google Play.",
       "imgAlt": "Startbildschirm der SmartDisc-App"
+    },
+    "seo": {
+      "title": "SmartDisc Produkte — Scheibe, App & Zubehör",
+      "description": "Das SmartDisc-Line-up: die wettkampftaugliche 175-g-Scheibe mit Sensorik, die kostenlose Begleit-App und passendes Zubehör. Jetzt vorbestellen ✓"
     }
   },
   "contact": {
@@ -177,6 +185,10 @@
     },
     "phone": {
       "body": "Du telefonierst lieber? Ruf uns einfach während der Geschäftszeiten an: Montag bis Freitag, 9–17 Uhr (MEZ)."
+    },
+    "seo": {
+      "title": "Kontakt — SmartDisc antwortet schnell",
+      "description": "Fragen zu Vorbestellung, Team-Bundles, Presse oder Partnerschaften? Schreib oder ruf uns an — wir antworten innerhalb eines Werktags ✓"
     }
   },
   "faq": {
@@ -304,6 +316,10 @@
       "title": "Wir beantworten jede E-Mail.",
       "body": "Meist innerhalb eines Werktags, manchmal schneller. Auch Fragen zur Vorbestellung landen im selben Postfach.",
       "button": "Schreib uns"
+    },
+    "seo": {
+      "title": "SmartDisc FAQ — Ehrliche Antworten auf deine Fragen",
+      "description": "Klare Antworten zu Vorbestellung, Scheibe, App, Versand, Rückgabe und Datenschutz. Nichts gefunden? Schreib uns einfach über die Kontaktseite ✓"
     }
   },
   "about": {
@@ -353,6 +369,10 @@
         "Firmware & Hardware",
         "Hardware & Platinen"
       ]
+    },
+    "seo": {
+      "title": "Über SmartDisc — Von Spielern für Spieler gebaut",
+      "description": "Vom Diplomprojekt zum datengestützten Ultimate-Training: Lerne das SmartDisc-Team, unsere Geschichte und die Entwicklung der smarten Scheibe kennen ✓"
     }
   },
   "privacy": {

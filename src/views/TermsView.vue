@@ -13,9 +13,9 @@ const {t} = useI18n()
     <SiteNav/>
     <main>
 
-      <section class="lp-container lp-pagehero" style="text-align:left">
-        <h1 style="font-size:clamp(36px,5vw,64px);margin-left:0">{{ t('terms.title') }}</h1>
-        <p style="margin:0;text-align:left">{{ t('terms.subtitle') }}</p>
+      <section class="lp-container lp-pagehero">
+        <h1>{{ t('terms.title') }}</h1>
+        <p>{{ t('terms.subtitle') }}</p>
       </section>
 
       <section class="lp-section lp-section--tight">

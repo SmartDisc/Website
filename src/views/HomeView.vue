@@ -3,11 +3,13 @@ import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useScrollReveal } from '@/composables/useScrollReveal'
+import { useSeo } from '@/composables/useSeo'
 import Atmosphere from '@/components/features/Atmosphere.vue'
 import SiteNav from '@/components/layout/SiteNav.vue'
 import SiteFooter from '@/components/layout/SiteFooter.vue'
 
 useScrollReveal()
+useSeo('home.seo.title', 'home.seo.description')
 
 const { t } = useI18n()
 

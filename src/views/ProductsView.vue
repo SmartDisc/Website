@@ -3,12 +3,14 @@ import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useScrollReveal } from '@/composables/useScrollReveal'
+import { useSeo } from '@/composables/useSeo'
 import Atmosphere from '@/components/features/Atmosphere.vue'
 import SiteNav from '@/components/layout/SiteNav.vue'
 import SiteFooter from '@/components/layout/SiteFooter.vue'
 import LIcon from '@/components/ui/LIcon.vue'
 
 useScrollReveal()
+useSeo('products.seo.title', 'products.seo.description')
 
 const { t } = useI18n()
 
@@ -57,7 +59,7 @@ const products = computed(() => [
               <div class="lp-product__art">
                 <div class="lp-product__art-inner">
                   <div v-if="p.art==='disc'" class="lp-disc-art lp-disc-art--static">
-                    <img src="/productDisc.png" :alt="t('products.disc.imgAlt')" />
+                    <img src="/productDisc.webp" :alt="t('products.disc.imgAlt')" loading="lazy" decoding="async" />
                   </div>
                   <div v-else-if="p.art==='disc-pro'" class="lp-disc-art">
                     <img src="/SmartDisc_Mark.png" :alt="t('products.discPro.imgAlt')" style="filter:drop-shadow(0 30px 40px rgba(16,42,87,.35)) hue-rotate(-10deg) contrast(1.05)"/>
@@ -115,10 +117,6 @@ const products = computed(() => [
                     <template v-if="p.free">{{ t('products.free') }} <small>{{ t('products.freeSuffix') }}</small></template>
                     <template v-else>{{p.price}}<small>{{p.priceSuffix}}</small></template>
                   </div>
-                  <div class="lp-product__avail">
-                    <LIcon name="calendar-clock" :size="14" :stroke="2"/>
-                    {{ p.status === 'preorder' ? t('products.avail.preorder') : p.status === 'soon' ? t('products.avail.soon') : t('products.avail.now') }}
-                  </div>
                 </div>
                 <div class="lp-product__cta">
                   <RouterLink class="lp-btn lp-btn--gold lp-btn--md" to="/contact">{{ t('products.cta') }}</RouterLink>
@@ -137,7 +135,7 @@ const products = computed(() => [
                 {{ t('products.appCallout.body') }}
               </p>
             </div>
-            <img src="/IphoneMockupLandingScreen.png" :alt="t('products.appCallout.imgAlt')">
+            <img src="/IphoneMockupLandingScreen.webp" :alt="t('products.appCallout.imgAlt')" loading="lazy" decoding="async">
           </div>
         </div>
       </section>

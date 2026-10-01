@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "seo-meta-optimizer": {
+      "source": "sickn33/agentic-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo-meta-optimizer/SKILL.md",
+      "computedHash": "f52210aba08136c1a29af96207e2fd5b861141ff6afce5fe18babecae39ed0f4"
+    }
+  }
+}

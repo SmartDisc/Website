@@ -13,9 +13,9 @@ const {t} = useI18n()
     <SiteNav/>
     <main>
 
-      <section class="lp-container lp-pagehero" style="text-align:left">
-        <h1 style="font-size:clamp(36px,5vw,64px);margin-left:0">{{ t('imprint.title') }}</h1>
-        <p style="margin:0;text-align:left">{{ t('imprint.subtitle') }}</p>
+      <section class="lp-container lp-pagehero">
+        <h1>{{ t('imprint.title') }}</h1>
+        <p>{{ t('imprint.subtitle') }}</p>
       </section>
 
       <section class="lp-section lp-section--tight">

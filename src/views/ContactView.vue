@@ -1,12 +1,14 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { useScrollReveal } from '@/composables/useScrollReveal'
+import { useSeo } from '@/composables/useSeo'
 import Atmosphere from '@/components/features/Atmosphere.vue'
 import SiteNav from '@/components/layout/SiteNav.vue'
 import SiteFooter from '@/components/layout/SiteFooter.vue'
 import LIcon from '@/components/ui/LIcon.vue'
 
 useScrollReveal()
+useSeo('contact.seo.title', 'contact.seo.description')
 
 const { t } = useI18n()
 </script>

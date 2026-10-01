@@ -119,6 +119,10 @@
           "k": "Disc, sensors, and app"
         }
       ]
+    },
+    "seo": {
+      "title": "SmartDisc — Sensor-Tracked Ultimate Frisbee Disc & App",
+      "description": "Track every throw automatically with SmartDisc, the first Ultimate Frisbee disc with built-in sensors. Pair it with our free app. Reserve yours from €129 ✓"
     }
   },
   "products": {
@@ -163,6 +167,10 @@
       "heading": "One app. One bag. One season.",
       "body": "The SmartDisc app is the only way to see what your disc captured, and it's available on the App Store and Google Play.",
       "imgAlt": "SmartDisc app landing screen"
+    },
+    "seo": {
+      "title": "SmartDisc Lineup — Smart Disc, App & Accessories",
+      "description": "Explore the full SmartDisc lineup: the sensor-equipped, competition-legal 175 g Ultimate disc, the free companion app, and accessories. Pre-order today ✓"
     }
   },
   "contact": {
@@ -177,6 +185,10 @@
     },
     "phone": {
       "body": "Prefer to talk? Give us a call during business hours: Monday to Friday, 9 am to 5 pm CET."
+    },
+    "seo": {
+      "title": "Contact SmartDisc — Questions Answered Fast",
+      "description": "Reach SmartDisc by email or phone for pre-order questions, team bundles, press, or partnerships. We reply to every message within one business day ✓"
     }
   },
   "faq": {
@@ -304,6 +316,10 @@
       "title": "We answer every email.",
       "body": "Usually within one business day, sometimes faster. Pre-order questions go to the same inbox.",
       "button": "Send us a note"
+    },
+    "seo": {
+      "title": "SmartDisc FAQ — Honest Answers Worth Reading",
+      "description": "Straight answers on pre-orders, the disc, the app, shipping, returns, and privacy. Still stuck? Reach the SmartDisc team on our contact page ✓"
     }
   },
   "about": {
@@ -353,6 +369,10 @@
         "Firmware & Hardware",
         "Hardware & PCB"
       ]
+    },
+    "seo": {
+      "title": "About SmartDisc — Built by Players, for Players",
+      "description": "From diploma project to data-driven Ultimate Frisbee training: meet the SmartDisc team, our story, and the timeline behind the sensor-equipped disc ✓"
     }
   },
   "privacy": {
@@ -525,5 +545,5 @@
     "linksBody": "This website may contain links to external websites operated by third parties. We have no influence over the content of these websites and therefore assume no responsibility for their content. Responsibility for linked websites lies solely with their respective operators.",
     "copyrightTitle": "Copyright",
     "copyrightBody": "All content, graphics, images, texts, software, and other materials published on this website are protected by Austrian, European Union, and international copyright laws. Any reproduction, distribution, modification, or commercial use requires the prior written consent of the respective rights holder. Third-party content is identified accordingly. If you believe that any content infringes copyright, please contact us so that the matter can be reviewed and addressed promptly."
-    }
+  }
 }
