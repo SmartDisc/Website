@@ -29,39 +29,29 @@ const { t } = useI18n()
         </p>
       </section>
 
-      <!-- contact cards -->
-      <section class="lp-section lp-section--tight">
+      <!-- contact info -->
+      <section class="lp-section lp-section--tight" style="padding-top:0">
         <div class="lp-container">
-          <div class="lp-contact-grid">
+          <div class="lp-contact-feature reveal" data-d="1" style="margin-top:0">
 
             <!-- email -->
-            <div class="lp-contact-feature reveal" data-d="1">
-              <div style="position:relative">
-                <span class="lp-contact-feature__ic">
-                  <LIcon name="mail" :size="22" :stroke="1.75"/>
-                </span>
-                <h2 class="lp-contact-feature__heading">smartdisc@mailo.com</h2>
-                <p class="lp-contact-feature__body">
-                  {{ t('contact.email.body') }}
-                </p>
-                <div class="lp-contact-feature__promise">
-                  <LIcon name="zap" :size="12" :stroke="2"/>
-                  {{ t('contact.email.promise') }}
-                </div>
+            <div class="lp-contact-feature__col">
+              <h2 class="lp-contact-feature__heading">smartdisc@mailo.com</h2>
+              <p class="lp-contact-feature__body">
+                {{ t('contact.email.body') }}
+              </p>
+              <div class="lp-contact-feature__promise">
+                <LIcon name="zap" :size="12" :stroke="2"/>
+                {{ t('contact.email.promise') }}
               </div>
             </div>
 
             <!-- phone -->
-            <div class="lp-contact-feature lp-contact-feature--light reveal" data-d="2">
-              <div style="position:relative">
-                <span class="lp-contact-feature__ic lp-contact-feature__ic--ink">
-                  <LIcon name="phone" :size="22" :stroke="1.75"/>
-                </span>
-                <h2 class="lp-contact-feature__heading lp-contact-feature__heading--ink">+43 677 6209 2117</h2>
-                <p class="lp-contact-feature__body lp-contact-feature__body--ink">
-                  {{ t('contact.phone.body') }}
-                </p>
-              </div>
+            <div class="lp-contact-feature__col">
+              <h2 class="lp-contact-feature__heading">+43 677 6209 2117</h2>
+              <p class="lp-contact-feature__body">
+                {{ t('contact.phone.body') }}
+              </p>
             </div>
 
           </div>

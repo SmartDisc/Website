@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
   <div class="lp-nav-wrap">
     <nav class="lp-nav" :aria-label="t('nav.ariaPrimary')">
       <RouterLink to="/" class="lp-nav__brand" :class="{ 'is-hidden': menuOpen }" :aria-label="t('nav.brandAria')">
-        <img class="lp-nav__mark" src="/logoBlue.png" :alt="t('nav.logoAlt')" />
+        <img class="lp-nav__mark" src="/logoGold.png" :alt="t('nav.logoAlt')" />
       </RouterLink>
       <div class="lp-nav__links">
         <RouterLink

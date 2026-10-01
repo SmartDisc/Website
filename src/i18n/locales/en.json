@@ -344,14 +344,13 @@
       ]
     },
     "team": {
-      "title": "Builders, players, coaches.",
+      "title": "Our Team.",
       "lede": "Most of us still play in a league. A few of us never picked up a disc until we joined. All of us care about how this thing feels in your hand.",
       "roles": [
         "Founder",
         "Co-founder",
         "App & Website",
         "Firmware & Hardware",
-        "Camera Tracking",
         "Hardware & PCB"
       ]
     }

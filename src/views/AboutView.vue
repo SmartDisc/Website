@@ -16,7 +16,6 @@ const teamMembers = [
   {i: 'EV', n: 'Elias Vavra', c: '#b8924f', photo: ''},
   {i: 'EW', n: 'Erik Weidenauer', c: '#6f93b5', photo: ''},
   {i: 'CS', n: 'Clemens Saurugg', c: '#3f9d6d', photo: ''},
-  {i: 'AP', n: 'Amritpal Padda', c: '#8aa6c2', photo: ''},
   {i: 'T', n: 'Tobias Weidmann', c: '#b8924f', photo: ''}
 ]
 
@@ -24,6 +23,10 @@ const team = computed(() => teamMembers.map((m, i) => ({
   ...m,
   r: t(`about.team.roles.${i}`),
 })))
+
+// founder + co-founder get a larger, featured spot above the rest of the team
+const teamLead = computed(() => team.value.slice(0, 2))
+const teamRest = computed(() => team.value.slice(2))
 
 const timelineYears = ['2024', '2025', '2025', '2025', '2026']
 
@@ -52,28 +55,6 @@ const timeline = computed(() => timelineYears.map((year, i) => ({
         </p>
       </section>
 
-      <!-- story -->
-      <section class="lp-section lp-section--tight" id="story">
-        <div class="lp-container">
-          <div>
-            <h2 class="lp-h2" style="margin-top:16px">{{ t('about.story.title1') }}</h2>
-            <p class="lp-body" style="font-size:17px;margin-top:18px">
-              {{ t('about.story.body1') }}
-            </p>
-          </div>
-
-          <div class="lp-container" style="margin-top:clamp(48px,10vw,80px)">
-            <div>
-              <h2 class="lp-h2" style="margin-top:16px">{{ t('about.story.title2') }}</h2>
-              <p class="lp-body" style="font-size:17px;margin-top:18px">
-                {{ t('about.story.body2') }}
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- timeline -->
       <section class="lp-section lp-section--tight" id="timeline">
         <div class="lp-container">
@@ -97,12 +78,20 @@ const timeline = computed(() => timelineYears.map((year, i) => ({
         <div class="lp-container">
           <div style="text-align:center;max-width:720px;margin:0 auto">
             <h2 class="lp-h2 reveal" data-d="1" style="margin-top:16px">{{ t('about.team.title') }}</h2>
-            <p class="lp-lede reveal" data-d="2" style="margin-top:16px;margin-left:auto;margin-right:auto">
-              {{ t('about.team.lede') }}
-            </p>
+          </div>
+          <div class="lp-team-lead">
+            <div v-for="m in teamLead" :key="m.n" class="lp-team-card lp-team-card--lg reveal" data-d="1">
+              <div class="lp-team-card__avatar"
+                   :style="m.photo ? null : { background: `linear-gradient(135deg,${m.c},${m.c}cc)` }">
+                <img v-if="m.photo" :src="m.photo" :alt="m.n"/>
+                <template v-else>{{ m.i }}</template>
+              </div>
+              <h4>{{ m.n }}</h4>
+              <p>{{ m.r }}</p>
+            </div>
           </div>
           <div class="lp-team">
-            <div v-for="m in team" :key="m.n" class="lp-team-card reveal" data-d="1">
+            <div v-for="m in teamRest" :key="m.n" class="lp-team-card reveal" data-d="1">
               <div class="lp-team-card__avatar"
                    :style="m.photo ? null : { background: `linear-gradient(135deg,${m.c},${m.c}cc)` }">
                 <img v-if="m.photo" :src="m.photo" :alt="m.n"/>

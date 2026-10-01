@@ -141,10 +141,6 @@ function isOpen(cat, i) {
               <p>{{ t('faq.cta.body') }}</p>
               <div class="lp-hero__cta">
                 <RouterLink class="lp-btn lp-btn--gold lp-btn--lg" to="/contact">{{ t('faq.cta.button') }}</RouterLink>
-                <a class="lp-btn lp-btn--glass lp-btn--lg" href="mailto:smartdisc@mailo.com"
-                   style="color:var(--fg-on-dark);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)">
-                  smartdisc@mailo.com
-                </a>
               </div>
             </div>
           </div>

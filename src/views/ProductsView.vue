@@ -47,30 +47,12 @@ const products = computed(() => [
         </p>
       </section>
 
-      <!-- pre-order banner -->
-      <section class="lp-container" style="display:flex;justify-content:center;padding-top:8px;padding-bottom:24px">
-        <div class="lp-preorder-banner reveal">
-          <span style="display:inline-flex;align-items:center;gap:8px">
-            <LIcon name="info" :size="14" :stroke="2"/>
-            <b>{{ t('products.banner.bold') }}</b>
-            {{ t('products.banner.text') }}
-          </span>
-        </div>
-      </section>
-
       <!-- products grid -->
       <section class="lp-section lp-section--tight">
         <div class="lp-container">
           <div class="lp-products">
             <article v-for="p in products" :key="p.id" :id="p.id"
                      :class="['lp-product reveal', p.featured && 'lp-product--featured']" data-d="1">
-              <!-- pre-order badge -->
-              <span v-if="p.status !== 'available'"
-                    :class="['lp-preorder-badge', p.status==='soon' && 'lp-preorder-badge--soon']">
-                <span class="dot"/>
-                {{ p.status === 'preorder' ? t('products.badge.preorder') : t('products.badge.soon') }}
-              </span>
-
               <!-- art -->
               <div class="lp-product__art">
                 <div class="lp-product__art-inner">
@@ -122,7 +104,7 @@ const products = computed(() => [
 
               <!-- copy -->
               <div class="lp-product__copy">
-                <div class="lp-product__cat">{{p.cat}}</div>
+               
                 <h3 class="lp-product__name">{{p.name}}</h3>
                 <p class="lp-product__tag">{{p.tag}}</p>
                 <ul class="lp-product__highlights">
@@ -137,7 +119,7 @@ const products = computed(() => [
                     <LIcon name="calendar-clock" :size="14" :stroke="2"/>
                     {{ p.status === 'preorder' ? t('products.avail.preorder') : p.status === 'soon' ? t('products.avail.soon') : t('products.avail.now') }}
                   </div>
-                </div>P
+                </div>
                 <div class="lp-product__cta">
                   <RouterLink class="lp-btn lp-btn--gold lp-btn--md" to="/contact">{{ t('products.cta') }}</RouterLink>
                 </div>
@@ -146,19 +128,16 @@ const products = computed(() => [
           </div>
 
           <!-- app callout -->
-          <div id="app" class="reveal" style="margin-top:clamp(48px,10vw,80px)">
-            <div class="app-callout">
-              <div class="app-callout__glow" />
-              <div class="app-callout__copy">
-                <h3 class="app-callout__heading">
-                  {{ t('products.appCallout.heading') }}
-                </h3>
-                <p class="app-callout__body">
-                  {{ t('products.appCallout.body') }}
-                </p>
-              </div>
-              <img src="/IphoneMockupLandingScreen.png" :alt="t('products.appCallout.imgAlt')">
+          <div id="app" class="app-callout reveal">
+            <div class="app-callout__copy">
+              <h3 class="app-callout__heading">
+                {{ t('products.appCallout.heading') }}
+              </h3>
+              <p class="app-callout__body">
+                {{ t('products.appCallout.body') }}
+              </p>
             </div>
+            <img src="/IphoneMockupLandingScreen.png" :alt="t('products.appCallout.imgAlt')">
           </div>
         </div>
       </section>
@@ -170,28 +149,17 @@ const products = computed(() => [
 
 <style scoped>
 .app-callout {
-  border-radius: var(--r-xl);
-  background: linear-gradient(160deg, #0e2348, #0a1c3d);
-  color: var(--fg-on-dark);
+  margin-top: 32px;
+  border-radius: var(--r-lg);
+  background: transparent;
+  color: var(--ink);
   padding: 56px;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 40px;
   align-items: center;
-  box-shadow: var(--shadow-glass-dark);
-  border: 1px solid rgba(146, 178, 220, .2);
   overflow: hidden;
   position: relative;
-}
-.app-callout__glow {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  right: -200px;
-  top: -200px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(222, 195, 140, .22), transparent 60%);
-  pointer-events: none;
 }
 .app-callout__copy { position: relative; }
 .app-callout__heading {
@@ -202,12 +170,12 @@ const products = computed(() => [
   line-height: 1.05;
   margin: 16px 0 14px;
   max-width: 16ch;
-  color: var(--fg-on-dark);
+  color: var(--ink);
 }
 .app-callout__body {
   font-family: var(--font-body);
   font-size: 17px;
-  color: var(--fg2-on-dark);
+  color: var(--fg2);
   line-height: 1.55;
   margin: 0 0 24px;
   max-width: 44ch;

@@ -16,8 +16,3 @@
 .reveal[data-d="2"] { transition-delay: 80ms; }
 .reveal[data-d="3"] { transition-delay: 160ms; }
 .reveal[data-d="4"] { transition-delay: 240ms; }
-
-/* ---------- keyframe animations ---------- */
-@keyframes discSpin {
-  to { transform: rotate(360deg); }
-}

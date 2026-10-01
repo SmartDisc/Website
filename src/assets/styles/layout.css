@@ -11,10 +11,11 @@
 @media (max-width: 480px) { .lp-container { padding: 0 20px; } }
 
 /* ---------- sections ---------- */
-.lp-section { padding: 120px 0; position: relative; }
-.lp-section--tight { padding: 96px 0; }
+.lp-section { padding: 128px 0; position: relative; }
+.lp-section--tight { padding: 88px 0; }
 .lp-section--dark {
-  background: linear-gradient(180deg, #0a1c3d 0%, #0e2348 60%, #102a57 100%);
+  background: linear-gradient(160deg, var(--ink-700) 0%, var(--ink-900) 70%);
+  border-top: 1px solid var(--line-gold);
   color: var(--fg-on-dark);
   overflow: hidden;
 }
@@ -30,24 +31,25 @@
 }
 
 /* ---------- generic inner-page hero ---------- */
-.lp-pagehero { padding: 80px 0 40px; text-align: center; position: relative; }
+.lp-pagehero { padding-top: 80px; padding-bottom: 40px; text-align: center; position: relative; }
 .lp-pagehero h1 {
   font-family: var(--font-display); font-weight: 600;
   font-size: clamp(40px, 6.4vw, 88px); line-height: 1.0; letter-spacing: -.03em;
   color: var(--fg1); margin: 24px auto 18px; max-width: 16ch; text-wrap: balance;
 }
 .lp-pagehero h1 em {
-  font-family: var(--font-body); font-style: italic; font-weight: 400;
-  background: var(--gold-sheen);
-  -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: -.01em;
+  font-style: normal; font-weight: 600;
+  color: var(--gold-500);
 }
 .lp-pagehero p {
   font-family: var(--font-body); font-size: clamp(18px, 1.7vw, 22px); line-height: 1.5;
   color: var(--fg2); max-width: 56ch; margin: 0 auto;
 }
-@media (max-width: 720px) { .lp-pagehero { padding: 64px 0 36px; } }
+@media (max-width: 720px) {
+  .lp-pagehero { padding-top: 64px; padding-bottom: 36px; }
+}
 @media (max-width: 480px) {
-  .lp-pagehero { padding: 56px 0 32px; }
+  .lp-pagehero { padding-top: 56px; padding-bottom: 32px; }
   .lp-pagehero h1 { font-size: 36px; margin: 20px auto 16px; }
   .lp-pagehero p { font-size: 17px; }
 }

@@ -344,14 +344,13 @@
       ]
     },
     "team": {
-      "title": "Macher, Spieler, Trainer.",
+      "title": "Unser Team.",
       "lede": "Die meisten von uns spielen selbst noch aktiv in einer Liga. Ein paar hatten vor dem Projekt noch nie eine Scheibe in der Hand. Aber uns allen ist wichtig, wie sich dieses Ding in deiner Hand anfühlt.",
       "roles": [
         "Gründerin",
         "Mitgründer",
         "App & Website",
         "Firmware & Hardware",
-        "Kamera-Tracking",
         "Hardware & Platinen"
       ]
     }
