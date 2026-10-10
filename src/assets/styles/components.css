@@ -1796,8 +1796,8 @@
 }
 
 .lp-team-card__avatar {
-    width: 84px;
-    height: 84px;
+    width: 104px;
+    height: 104px;
     border-radius: var(--r-sm);
     margin: 0 auto 16px;
     display: flex;
@@ -1811,8 +1811,8 @@
 }
 
 .lp-team-card--lg .lp-team-card__avatar {
-    width: 132px;
-    height: 132px;
+    width: 156px;
+    height: 156px;
     border-radius: var(--r-md);
     font-size: 38px;
     margin-bottom: 20px;
