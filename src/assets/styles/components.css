@@ -501,13 +501,56 @@
     position: relative;
 }
 
+.lp-hero--photo {
+    isolation: isolate;
+    min-height: clamp(460px, 62vw, 720px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.lp-hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.lp-hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(.58) saturate(.9);
+}
+
+.lp-hero__scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(8, 12, 22, .6) 0%, rgba(8, 12, 22, .38) 45%, rgba(8, 12, 22, .65) 100%);
+}
+
+.lp-hero--photo .lp-display,
+.lp-hero--photo .lp-lede {
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
+}
+
+.lp-hero--photo .lp-display {
+    color: var(--fg-on-dark);
+}
+
+.lp-hero--photo .lp-lede {
+    color: var(--fg2-on-dark);
+}
+
 .lp-hero__top {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 28px;
-    padding: 60px 0 56px;
+    padding: 60px clamp(20px, 6vw, 56px) 56px;
+    width: 100%;
 }
 
 .lp-hero__logo {
@@ -550,62 +593,19 @@
     }
 
     .lp-hero__top {
-        padding: 44px 0 40px;
+        padding: 44px 20px 40px;
         gap: 24px;
     }
 }
 
 /* ---------- ecosystem composition (home — app section) ---------- */
 .lp-ecosystem {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.lp-ecosystem__copy {
-    max-width: 52ch;
-}
-
-.lp-ecosystem__disc {
-    width: 100%;
-    max-width: 480px;
-    margin-left: auto;
-    border-radius: var(--r-lg);
-    overflow: hidden;
-}
-
-.lp-ecosystem__disc img {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1200 / 1490;
-    object-fit: cover;
-}
-
-@media (max-width: 980px) {
-    .lp-ecosystem {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .lp-ecosystem__copy {
-        max-width: none;
-        margin: 0 auto;
-    }
-
-    .lp-ecosystem__disc {
-        max-width: 420px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .lp-ecosystem {
-        gap: 32px;
-    }
+    max-width: 62ch;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* ---------- problem section (home) ---------- */
@@ -1533,49 +1533,59 @@
 
 .lp-footer__top {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+    gap: 56px;
     padding-bottom: 48px;
     border-bottom: 1px solid rgba(255, 255, 255, .14);
 }
 
+.lp-footer__brand-col {
+    max-width: 36ch;
+}
+
 .lp-footer__brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 18px;
+    display: inline-flex;
 }
 
-.lp-footer__brand img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
+.lp-footer__brand-mark {
+    display: block;
+    width: 120px;
+    height: 112px;
+    overflow: hidden;
+    position: relative;
 }
 
-.lp-footer__brand b {
-    font-family: var(--font-display);
-    font-weight: 700;
-    letter-spacing: .04em;
-    color: var(--fg-on-dark);
-    font-size: 18px;
+.lp-footer__brand-mark img {
+    position: absolute;
+    top: -33.7px;
+    left: -33.7px;
+    width: 187px;
+    height: 187px;
+    max-width: none;
 }
 
 .lp-footer__about {
     font-family: var(--font-body);
     font-size: 15px;
     color: var(--fg2-on-dark);
-    max-width: 36ch;
     line-height: 1.55;
+    margin-top: 16px;
+}
+
+.lp-footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
 }
 
 .lp-footer__col h4 {
     font-family: var(--font-mono);
     font-weight: 500;
-    font-size: 12px;
-    letter-spacing: .12em;
+    font-size: 15px;
+    letter-spacing: .08em;
     text-transform: uppercase;
     color: var(--fg2-on-dark);
-    margin: 0 0 16px;
+    margin: 0 0 18px;
 }
 
 .lp-footer__col ul {
@@ -1648,9 +1658,21 @@
     color: var(--fg-on-dark);
 }
 
-@media (max-width: 880px) {
+@media (max-width: 860px) {
     .lp-footer__top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .lp-footer__brand-col {
+        max-width: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .lp-footer__links {
         grid-template-columns: 1fr 1fr;
+        gap: 28px 24px;
     }
 }
 
@@ -1660,9 +1682,13 @@
     }
 
     .lp-footer__top {
-        grid-template-columns: 1fr;
         gap: 32px;
         padding-bottom: 36px;
+    }
+
+    .lp-footer__links {
+        grid-template-columns: 1fr;
+        gap: 28px;
     }
 
     .lp-footer__bot {

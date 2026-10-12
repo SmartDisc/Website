@@ -26,8 +26,12 @@ const pains = computed(() => [0, 1, 2, 3].map((i) => ({
     <main>
 
       <!-- ===== HERO ===== -->
-      <section class="lp-hero lp-container" id="top">
-        <div class="lp-hero__top">
+      <section class="lp-hero lp-hero--photo" id="top">
+        <div class="lp-hero__media" aria-hidden="true">
+          <img src="/Product/frisbeeHandPicture.webp" alt="" loading="eager" fetchpriority="high" decoding="async" />
+          <div class="lp-hero__scrim" />
+        </div>
+        <div class="lp-hero__top lp-container">
           <h1 class="lp-display reveal" data-d="1" style="max-width:14ch;text-wrap:balance;text-align:center">
             {{ t('home.hero.title') }}
           </h1>
@@ -47,17 +51,12 @@ const pains = computed(() => [0, 1, 2, 3].map((i) => ({
       <section class="lp-section lp-section--dark" id="disc">
         <div class="lp-container">
           <div class="lp-ecosystem">
-            <div class="lp-ecosystem__copy">
-              <h2 class="lp-h1 reveal" data-d="1" style="text-wrap:balance">
-                {{ t('home.ecosystem.title') }}
-              </h2>
-              <p class="lp-lede reveal" data-d="2" style="margin-top:22px">
-                {{ t('home.ecosystem.lede') }}
-              </p>
-            </div>
-            <div class="lp-ecosystem__disc reveal" data-d="2">
-              <img src="/frisbeeHandPicture.webp" :alt="t('home.ecosystem.imgAlt')" loading="lazy" decoding="async"/>
-            </div>
+            <h2 class="lp-h1 reveal" data-d="1" style="text-wrap:balance">
+              {{ t('home.ecosystem.title') }}
+            </h2>
+            <p class="lp-lede reveal" data-d="2" style="margin-top:22px">
+              {{ t('home.ecosystem.lede') }}
+            </p>
           </div>
         </div>
       </section>

@@ -9,38 +9,41 @@ const { t } = useI18n()
   <footer class="lp-footer">
     <div class="lp-container">
       <div class="lp-footer__top">
-        <div>
-          <div class="lp-footer__brand">
-            <img src="/logoGold.png" :alt="t('footer.logoAlt')" />
-            <b>{{ t('footer.brand') }}</b>
-          </div>
+        <div class="lp-footer__brand-col">
+          <RouterLink class="lp-footer__brand" to="/">
+            <span class="lp-footer__brand-mark">
+              <img src="/Logo/logoGold.png" :alt="t('footer.logoAlt')" />
+            </span>
+          </RouterLink>
           <p class="lp-footer__about">
             {{ t('footer.about') }}
           </p>
         </div>
-        <div class="lp-footer__col">
-          <h4>{{ t('footer.shop.title') }}</h4>
-          <ul>
-            <li><RouterLink to="/products">{{ t('footer.shop.all') }}</RouterLink></li>
-            <li><RouterLink to="/products#disc">{{ t('footer.shop.disc') }}</RouterLink></li>
-            <li><RouterLink to="/products#app">{{ t('footer.shop.app') }}</RouterLink></li>
-          </ul>
-        </div>
-        <div class="lp-footer__col">
-          <h4>{{ t('footer.company.title') }}</h4>
-          <ul>
-            <li><RouterLink to="/about">{{ t('footer.company.about') }}</RouterLink></li>
-            <li><RouterLink to="/about#story">{{ t('footer.company.story') }}</RouterLink></li>
-            <li><RouterLink to="/about#team">{{ t('footer.company.team') }}</RouterLink></li>
-            <li><RouterLink to="/contact">{{ t('footer.company.contact') }}</RouterLink></li>
-          </ul>
-        </div>
-        <div class="lp-footer__col">
-          <h4>{{ t('footer.support.title') }}</h4>
-          <ul>
-            <li><RouterLink to="/faq">{{ t('footer.support.faq') }}</RouterLink></li>
-            <li><RouterLink to="/contact">{{ t('footer.support.contact') }}</RouterLink></li>
-          </ul>
+        <div class="lp-footer__links">
+          <div class="lp-footer__col">
+            <h4>{{ t('footer.shop.title') }}</h4>
+            <ul>
+              <li><RouterLink to="/products">{{ t('footer.shop.all') }}</RouterLink></li>
+              <li><RouterLink to="/products#disc">{{ t('footer.shop.disc') }}</RouterLink></li>
+              <li><RouterLink to="/products#app">{{ t('footer.shop.app') }}</RouterLink></li>
+            </ul>
+          </div>
+          <div class="lp-footer__col">
+            <h4>{{ t('footer.company.title') }}</h4>
+            <ul>
+              <li><RouterLink to="/about">{{ t('footer.company.about') }}</RouterLink></li>
+              <li><RouterLink to="/about#story">{{ t('footer.company.story') }}</RouterLink></li>
+              <li><RouterLink to="/about#team">{{ t('footer.company.team') }}</RouterLink></li>
+              <li><RouterLink to="/contact">{{ t('footer.company.contact') }}</RouterLink></li>
+            </ul>
+          </div>
+          <div class="lp-footer__col">
+            <h4>{{ t('footer.support.title') }}</h4>
+            <ul>
+              <li><RouterLink to="/faq">{{ t('footer.support.faq') }}</RouterLink></li>
+              <li><RouterLink to="/contact">{{ t('footer.support.contact') }}</RouterLink></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="lp-footer__bot">

@@ -59,7 +59,7 @@ const products = computed(() => [
               <div class="lp-product__art">
                 <div class="lp-product__art-inner">
                   <div v-if="p.art==='disc'" class="lp-disc-art lp-disc-art--static">
-                    <img src="/productDisc.webp" :alt="t('products.disc.imgAlt')" loading="lazy" decoding="async" />
+                    <img src="/Product/productDisc.webp" :alt="t('products.disc.imgAlt')" loading="lazy" decoding="async" />
                   </div>
                   <div v-else-if="p.art==='disc-pro'" class="lp-disc-art">
                     <img src="/SmartDisc_Mark.png" :alt="t('products.discPro.imgAlt')" style="filter:drop-shadow(0 30px 40px rgba(16,42,87,.35)) hue-rotate(-10deg) contrast(1.05)"/>
@@ -135,7 +135,7 @@ const products = computed(() => [
                 {{ t('products.appCallout.body') }}
               </p>
             </div>
-            <img src="/IphoneMockupLandingScreen.webp" :alt="t('products.appCallout.imgAlt')" loading="lazy" decoding="async">
+            <img src="/Product/IphoneMockupLandingScreen.webp" :alt="t('products.appCallout.imgAlt')" loading="lazy" decoding="async">
           </div>
         </div>
       </section>
