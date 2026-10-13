@@ -15,7 +15,7 @@ const {t} = useI18n()
 // photo: optional path to an image in public/, e.g. '/team/petra.jpg' — shown instead of the initials
 const teamMembers = [
   {i: 'PP', n: 'Petra Palinkas', c: '#1d3d72', photo: '/People/Petra.png'},
-  {i: 'EV', n: 'Elias Vavra', c: '#b8924f', photo: ''},
+  {i: 'EV', n: 'Elias Vavra', c: '#b8924f', photo: '/People/Elias.jpeg'},
   {i: 'EW', n: 'Erik Weidenauer', c: '#6f93b5', photo: '/People/Erik.jpeg'},
   {i: 'CS', n: 'Clemens Saurugg', c: '#3f9d6d', photo: '/People/Clemens.jpg'},
   {i: 'T', n: 'Tobias Weidmann', c: '#b8924f', photo: '/People/Tobias.jpg'}
