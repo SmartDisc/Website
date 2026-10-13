@@ -814,7 +814,6 @@
     max-width: 880px;
     margin-left: auto;
     margin-right: auto;
-    border-top: 1px solid var(--line-on-paper);
 }
 
 .lp-faq__item {
@@ -822,6 +821,10 @@
     background: transparent;
     overflow: hidden;
     transition: background var(--dur-base);
+}
+
+.lp-faq__item:last-child {
+    border-bottom: none;
 }
 
 
