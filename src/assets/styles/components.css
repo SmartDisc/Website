@@ -40,7 +40,6 @@
     gap: 24px;
     padding: 18px 32px;
     background: var(--ink-900);
-    border-bottom: 1px solid var(--line-on-dark);
 }
 
 .lp-nav__brand {
